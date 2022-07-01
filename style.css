@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Satisfy&display=swap');
+@font-face {
+    font-family: 'Jogo';
+    src: url(fontes/Kid\ Games.ttf);
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+
+    --cor1: #1D1F36;
+    --cor2: #464B82;
+    --cor3: #7077CF;
+    --cor4: #42434F;
+    --cor5: #6D6F82;
+
+    --fonte-destaque: 'Bebas Neue', cursive, sans-serif;
+    --fonte-jogo: 'Jogo', sans-serif;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #6D6F82;
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    min-height: 150px;
+    text-align: center;
+}
+
+header > h1 {
+    padding: 30px 0px 30px 0px;
+    font-size: 3.5em;
+    color: white;
+    font-family: var(--fonte-jogo);
+    text-shadow: 2px 2px 8px black;
+}
+
+nav {
+    background-color: var(--cor2);
+    text-align: center;
+}
+
+nav > a {
+    color: white;
+    padding: 2px 10px 1px 10px;
+    text-decoration: none;
+    font-family: var(--fonte-destaque);
+    font-size: 1.3em;
+    text-shadow: 2px 2px 8px black;
+}
+
+nav > a:hover {
+    background-color: var(--cor1);
+    border-radius: 4px;
+    color: var(--cor2);
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.575);
+    margin-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main div.img {
+    display: inline-block;
+    border: 3px solid #42434F;
+    width: 150px;
+    height: 200px;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    margin-bottom: 10px;
+}
+
+main div.skinnomemaior {
+    display: inline-block;
+    border: 3px solid #42434F;
+    width: 150px;
+    height: 220px;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    margin-bottom: 10px;
+}
+
+main div.img:hover {
+    background-color: var(--cor1);
+    color: white;
+}
+
+main img {
+    width: 150px;
+    height: 180px;
+}
+
+main p {
+    font-family: var(--fonte-padrao);
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+main > article > h1 {
+    font-size: 3.0em;
+    margin: 20px 0px;
+    font-family: var(--fonte-destaque);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    color: white;
+    text-indent: 10px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 8px black;
+}
+
+main > article > h2 {
+    font-size: 2.0em;
+    margin: 20px 0px;
+    font-family: var(--fonte-destaque);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    color: white;
+    text-indent: 10px;
+    border-radius: 5px;
+}
+
+main > article > h2.semdegrade {
+    font-size: 1.5em;
+    margin: 20px 0px;
+    font-family: var(--fonte-destaque);
+    background-image: linear-gradient(to right, transparent, transparent);
+    color: black;
+    text-indent: 10px;
+    border-radius: 5px;
+}
+
+main > article > h3 {
+    font-size: 1.3em;
+    margin: 10px 0px;
+    font-family: var(--fonte-destaque);
+}
+
+main > article > ul {
+    list-style-position: inside;
+}
+
+main > article > ul > li {
+    list-style-position: inside;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+main > article > h1 > a.classe {
+    text-decoration: none;
+    color: white;
+}
+
+main > article > h1.classe:hover {
+    background-image: linear-gradient(to right, #6d6f82a9, transparent);
+}
+
+img.heroi {
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 330px;
+}
+
+picture > img.capa {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+
+div.video {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    margin: 0px 0px 30px 0px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+    border-radius: 10px;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #464B82;
+    border-radius: 3px;
+    margin: 2px;
+    text-align: center;
+}
+
+footer > p {
+    color: white;
+    padding: 5px 2px;
+    font-family: var(--fonte-destaque);
+}
